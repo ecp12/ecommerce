@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+.container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: var(--font-title);
+    margin-top: 5%;
+    gap: 10%;
+
+    .card {
+        width: auto;
+        height: auto;
+        margin-bottom: 3%;
+        border: none;
+        // border: 0.1vh solid rgb(249, 245, 245);
+
+
+        .row-img {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-self: center;
+            border: 0.1vh solid var(--neutral-color_4);
+            border-radius: 3%;
+        }
+
+        .card-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2vh;
+            line-height: 2vh;
+            color: var(--black-color);
+        }
+
+        .card-text1 {
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1.4vh;
+            line-height: 0.8vh;
+            color: var(--black-color);
+            opacity: 0.8;
+        }
+
+        .card-text2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2vh;
+            line-height: 2vh;
+            color: var(--black-color);
+        }
+
+        .card-body {
+            align-content: center;
+            .add-btn {
+                background: var(--white-color);
+                border: 0.1vh solid var(--primary-color);
+                box-shadow: 0vh 0vh 0vh var(--black-color);
+                border-radius: 3vh;
+                width: 95%;
+                height: 4vh;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5vh;
+                color: var(--primary-color);
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .card{
+        width: 15% !important; 
+        height: 25% !important;
+    }
+    
+}
